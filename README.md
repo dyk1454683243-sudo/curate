@@ -68,7 +68,7 @@ npm run dev
 npm run build:extension
 ```
 
-Load `dist/extension/` as unpacked in Chrome or Edge. In **Details → Extension options**, set environment to Development (`http://localhost:3000`).
+Load `dist/extension/` as unpacked in Chrome or Edge. In **Details → Extension options**, set environment to Development (`http://localhost:3000`) or Self-hosted with your own `https://` API URL.
 
 Full walkthrough: [docs/development.md](docs/development.md). How to send a PR: [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -108,11 +108,7 @@ Shipped: private library in the popup, Chrome and Edge listings. Next: tests, ti
 
 ## Contributors
 
-Maintainer: [Samuel Olabode](https://github.com/DevOlabode) ([@DevOlabode](https://github.com/DevOlabode)).
-
-<a href="https://github.com/DevOlabode/curate/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DevOlabode/curate" alt="Contributors to Curate" />
-</a>
+Maintainer: ([@DevOlabode](https://github.com/DevOlabode)).
 
 PRs are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
