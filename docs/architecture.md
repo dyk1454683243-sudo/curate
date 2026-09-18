@@ -29,8 +29,15 @@ curate/
 ├── models/                 # User, bookmark, collection (MongoDB)
 ├── landing/                # Static site (Vercel)
 ├── views/                  # Express HTML (landing fallback, password reset)
+├── tests/                  # node --test suite (api/, unit/, helpers/)
+├── app.js                  # Express app: middleware, routes, error handling
+├── index.js                # Env, DB connection, HTTP server startup
 └── dist/extension/         # Build output (gitignored)
 ```
+
+`app.js` exports the configured Express app with no server listening or DB
+connection, so tests can import it directly. `index.js` loads environment
+variables, connects to MongoDB, then starts the HTTP server with that app.
 
 `npm run build:extension` copies `extension/` and `src/shared/` into `dist/extension/` and checks `manifest.json`.
 
@@ -41,7 +48,7 @@ Popup  --Bearer JWT-->  /api/v1  -->  MongoDB
 Options page           (same API, developer host override)
 ```
 
-There are **no content scripts**. The extension does not inject into web pages and does not read browsing history. Permissions are `storage` plus host access to the Curate API (production and localhost).
+There are **no content scripts**. The extension does not inject into web pages and does not read browsing history. Permissions are `storage`, `activeTab` (current tab URL/title after a toolbar click or the add-bookmark command), plus host access to the Curate API (production and localhost).
 
 ## Auth in brief
 

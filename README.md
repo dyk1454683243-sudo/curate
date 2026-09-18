@@ -31,6 +31,7 @@ The public site lives in [`landing/`](landing/). Sign in, the library, and accou
 - **Private by default** — links stay on your account.
 - **Light and dark** theme.
 - **Library first** — the home screen is your collections and bookmarks. Forms appear when you add or edit.
+- **Keyboard shortcuts** — `Alt+Shift+S` saves the current tab; `Esc` closes a form or goes back. See [extension/README.md](extension/README.md).
 
 ## Tech stack
 
@@ -108,11 +109,7 @@ Shipped: private library in the popup, Chrome and Edge listings. Next: tests, ti
 
 ## Contributors
 
-Maintainer: [Samuel Olabode](https://github.com/DevOlabode) ([@DevOlabode](https://github.com/DevOlabode)).
-
-<a href="https://github.com/DevOlabode/curate/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DevOlabode/curate" alt="Contributors to Curate" />
-</a>
+Maintainer: ([@DevOlabode](https://github.com/DevOlabode)).
 
 PRs are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
